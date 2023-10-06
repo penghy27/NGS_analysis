@@ -25,4 +25,6 @@ Utilized KEGG and GO databases for comprehensive annotation of protein sequences
 [Functional Annotation](https://github.com/NU-Bioinformatics/module-10-penghy27.git)  
 
   
-Please refer to the individual repositories linked above for detailed code, data, and documentation related to each specific analysis task. 
+Please refer to the individual repositories linked above for detailed code, data, and documentation related to each specific analysis task.  
+
+Other academic projects can be found [here](https://github.com/penghy27/NU_academic_projects.git).
