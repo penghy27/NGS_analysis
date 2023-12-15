@@ -1,0 +1,272 @@
+-k flag not specified, so building main hash table with default 15-mers
+-j flag not specified, so building regional hash tables with default 6-mers
+Writing files under data
+Not sorting chromosomes.  To sort chromosomes other ways, use the -s flag.
+Warning: Genome FASTA files were given, so we are over-writing the index files at data/AiptasiaGmapDb
+Creating files in directory data/AiptasiaGmapDb
+Running "/shared/centos7/gsnap/2021-12-17/bin/fa_coords"        -o "data/AiptasiaGmapDb.coords" -f "data/AiptasiaGmapDb.sources"
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmap_process"   -c "data/AiptasiaGmapDb.coords" -f "data/AiptasiaGmapDb.sources" | "/shared/centos7/gsnap/2021-12-17/bin/gmapindex"  -d AiptasiaGmapDb -D "data/AiptasiaGmapDb" -A -s none
+Reading coordinates from file data/AiptasiaGmapDb.coords
+Logging contig LJWW01000001.1 at LJWW01000001.1:1..1835033 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01000010.1 at LJWW01000010.1:1..1281744 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01000100.1 at LJWW01000100.1:1..601523 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01000999.1 at LJWW01000999.1:1..20050 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001000.1 at LJWW01001000.1:1..19988 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001001.1 at LJWW01001001.1:1..19966 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001002.1 at LJWW01001002.1:1..19901 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001003.1 at LJWW01001003.1:1..19971 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001004.1 at LJWW01001004.1:1..19750 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001005.1 at LJWW01001005.1:1..19731 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001006.1 at LJWW01001006.1:1..19681 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001007.1 at LJWW01001007.1:1..19602 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001008.1 at LJWW01001008.1:1..19578 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01000101.1 at LJWW01000101.1:1..601095 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001009.1 at LJWW01001009.1:1..19540 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001010.1 at LJWW01001010.1:1..19498 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001011.1 at LJWW01001011.1:1..19524 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001012.1 at LJWW01001012.1:1..19493 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001013.1 at LJWW01001013.1:1..19465 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001014.1 at LJWW01001014.1:1..19413 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001015.1 at LJWW01001015.1:1..19404 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001016.1 at LJWW01001016.1:1..19352 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001017.1 at LJWW01001017.1:1..19310 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001018.1 at LJWW01001018.1:1..19170 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01000102.1 at LJWW01000102.1:1..601041 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001019.1 at LJWW01001019.1:1..19114 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001020.1 at LJWW01001020.1:1..19091 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001021.1 at LJWW01001021.1:1..19088 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001022.1 at LJWW01001022.1:1..19024 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001023.1 at LJWW01001023.1:1..19007 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001024.1 at LJWW01001024.1:1..18952 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001025.1 at LJWW01001025.1:1..18927 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001026.1 at LJWW01001026.1:1..18922 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001027.1 at LJWW01001027.1:1..18914 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001028.1 at LJWW01001028.1:1..18811 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01000103.1 at LJWW01000103.1:1..598954 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001029.1 at LJWW01001029.1:1..18785 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001030.1 at LJWW01001030.1:1..18782 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001031.1 at LJWW01001031.1:1..18711 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001032.1 at LJWW01001032.1:1..18677 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001033.1 at LJWW01001033.1:1..18540 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001034.1 at LJWW01001034.1:1..18482 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001035.1 at LJWW01001035.1:1..18401 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001036.1 at LJWW01001036.1:1..18188 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001037.1 at LJWW01001037.1:1..18253 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001038.1 at LJWW01001038.1:1..18252 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01000104.1 at LJWW01000104.1:1..797921 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001039.1 at LJWW01001039.1:1..18236 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001040.1 at LJWW01001040.1:1..18219 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+Logging contig LJWW01001041.1 at LJWW01001041.1:1..18122 in genome AiptasiaGmapDb
+ => primary (linear) chromosome
+More than 50 contigs.  Will stop printing messages
+Total genomic length = 256132296 bp
+divsort == NO_SORT
+Have a total of 4312 chromosomes
+Writing chromosome file data/AiptasiaGmapDb/AiptasiaGmapDb.chromosome
+Chromosome LJWW01000001.1 has universal coordinates 1..1835033
+Chromosome LJWW01000010.1 has universal coordinates 1835034..3116777
+Chromosome LJWW01000100.1 has universal coordinates 3116778..3718300
+Chromosome LJWW01000999.1 has universal coordinates 3718301..3738350
+Chromosome LJWW01001000.1 has universal coordinates 3738351..3758338
+Chromosome LJWW01001001.1 has universal coordinates 3758339..3778304
+Chromosome LJWW01001002.1 has universal coordinates 3778305..3798205
+Chromosome LJWW01001003.1 has universal coordinates 3798206..3818176
+Chromosome LJWW01001004.1 has universal coordinates 3818177..3837926
+Chromosome LJWW01001005.1 has universal coordinates 3837927..3857657
+Chromosome LJWW01001006.1 has universal coordinates 3857658..3877338
+Chromosome LJWW01001007.1 has universal coordinates 3877339..3896940
+Chromosome LJWW01001008.1 has universal coordinates 3896941..3916518
+Chromosome LJWW01000101.1 has universal coordinates 3916519..4517613
+Chromosome LJWW01001009.1 has universal coordinates 4517614..4537153
+Chromosome LJWW01001010.1 has universal coordinates 4537154..4556651
+Chromosome LJWW01001011.1 has universal coordinates 4556652..4576175
+Chromosome LJWW01001012.1 has universal coordinates 4576176..4595668
+Chromosome LJWW01001013.1 has universal coordinates 4595669..4615133
+Chromosome LJWW01001014.1 has universal coordinates 4615134..4634546
+Chromosome LJWW01001015.1 has universal coordinates 4634547..4653950
+Chromosome LJWW01001016.1 has universal coordinates 4653951..4673302
+Chromosome LJWW01001017.1 has universal coordinates 4673303..4692612
+Chromosome LJWW01001018.1 has universal coordinates 4692613..4711782
+Chromosome LJWW01000102.1 has universal coordinates 4711783..5312823
+Chromosome LJWW01001019.1 has universal coordinates 5312824..5331937
+Chromosome LJWW01001020.1 has universal coordinates 5331938..5351028
+Chromosome LJWW01001021.1 has universal coordinates 5351029..5370116
+Chromosome LJWW01001022.1 has universal coordinates 5370117..5389140
+Chromosome LJWW01001023.1 has universal coordinates 5389141..5408147
+Chromosome LJWW01001024.1 has universal coordinates 5408148..5427099
+Chromosome LJWW01001025.1 has universal coordinates 5427100..5446026
+Chromosome LJWW01001026.1 has universal coordinates 5446027..5464948
+Chromosome LJWW01001027.1 has universal coordinates 5464949..5483862
+Chromosome LJWW01001028.1 has universal coordinates 5483863..5502673
+Chromosome LJWW01000103.1 has universal coordinates 5502674..6101627
+Chromosome LJWW01001029.1 has universal coordinates 6101628..6120412
+Chromosome LJWW01001030.1 has universal coordinates 6120413..6139194
+Chromosome LJWW01001031.1 has universal coordinates 6139195..6157905
+Chromosome LJWW01001032.1 has universal coordinates 6157906..6176582
+Chromosome LJWW01001033.1 has universal coordinates 6176583..6195122
+Chromosome LJWW01001034.1 has universal coordinates 6195123..6213604
+Chromosome LJWW01001035.1 has universal coordinates 6213605..6232005
+Chromosome LJWW01001036.1 has universal coordinates 6232006..6250193
+Chromosome LJWW01001037.1 has universal coordinates 6250194..6268446
+Chromosome LJWW01001038.1 has universal coordinates 6268447..6286698
+Chromosome LJWW01000104.1 has universal coordinates 6286699..7084619
+Chromosome LJWW01001039.1 has universal coordinates 7084620..7102855
+Chromosome LJWW01001040.1 has universal coordinates 7102856..7121074
+Chromosome LJWW01001041.1 has universal coordinates 7121075..7139196
+More than 50 contigs.  Will stop printing messages
+Writing chromosome IIT file data/AiptasiaGmapDb/AiptasiaGmapDb.chromosome.iit
+Writing IIT file header information...coordinates require 4 bytes each...done
+Processing null division/chromosome...sorting...writing...done (4312 intervals)
+Writing IIT file footer information...done
+Writing IIT file header information...coordinates require 4 bytes each...done
+Processing null division/chromosome...sorting...writing...done (4312 intervals)
+Writing IIT file footer information...done
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmap_process"   -c "data/AiptasiaGmapDb.coords" -f "data/AiptasiaGmapDb.sources" | "/shared/centos7/gsnap/2021-12-17/bin/gmapindex"  -d AiptasiaGmapDb -D "data/AiptasiaGmapDb" -G
+Genome length is 256132296 nt
+Trying to allocate 24012407*4 bytes of memory...succeeded.  Building genome in memory.
+Reading coordinates from file data/AiptasiaGmapDb.coords
+Writing contig LJWW01000001.1 to universal coordinates 1..1835033
+Don't recognize character Y at position 1587.  Using N instead
+Don't recognize character Y at position 1699.  Using N instead
+Don't recognize character K at position 1731.  Using N instead
+Don't recognize character R at position 1794.  Using N instead
+Don't recognize character K at position 1916.  Using N instead
+Don't recognize character K at position 2199.  Using N instead
+Don't recognize character R at position 2508.  Using N instead
+Don't recognize character Y at position 2541.  Using N instead
+Don't recognize character R at position 2666.  Using N instead
+Too many non-recognizable characters.  Not reporting each individual occurrence anymore.
+Writing contig LJWW01000010.1 to universal coordinates 1835034..3116777
+Writing contig LJWW01000100.1 to universal coordinates 3116778..3718300
+Writing contig LJWW01000999.1 to universal coordinates 3718301..3738350
+Writing contig LJWW01001000.1 to universal coordinates 3738351..3758338
+Writing contig LJWW01001001.1 to universal coordinates 3758339..3778304
+Writing contig LJWW01001002.1 to universal coordinates 3778305..3798205
+Writing contig LJWW01001003.1 to universal coordinates 3798206..3818176
+Writing contig LJWW01001004.1 to universal coordinates 3818177..3837926
+Writing contig LJWW01001005.1 to universal coordinates 3837927..3857657
+Writing contig LJWW01001006.1 to universal coordinates 3857658..3877338
+Writing contig LJWW01001007.1 to universal coordinates 3877339..3896940
+Writing contig LJWW01001008.1 to universal coordinates 3896941..3916518
+Writing contig LJWW01000101.1 to universal coordinates 3916519..4517613
+Writing contig LJWW01001009.1 to universal coordinates 4517614..4537153
+Writing contig LJWW01001010.1 to universal coordinates 4537154..4556651
+Writing contig LJWW01001011.1 to universal coordinates 4556652..4576175
+Writing contig LJWW01001012.1 to universal coordinates 4576176..4595668
+Writing contig LJWW01001013.1 to universal coordinates 4595669..4615133
+Writing contig LJWW01001014.1 to universal coordinates 4615134..4634546
+Writing contig LJWW01001015.1 to universal coordinates 4634547..4653950
+Writing contig LJWW01001016.1 to universal coordinates 4653951..4673302
+Writing contig LJWW01001017.1 to universal coordinates 4673303..4692612
+Writing contig LJWW01001018.1 to universal coordinates 4692613..4711782
+Writing contig LJWW01000102.1 to universal coordinates 4711783..5312823
+Writing contig LJWW01001019.1 to universal coordinates 5312824..5331937
+Writing contig LJWW01001020.1 to universal coordinates 5331938..5351028
+Writing contig LJWW01001021.1 to universal coordinates 5351029..5370116
+Writing contig LJWW01001022.1 to universal coordinates 5370117..5389140
+Writing contig LJWW01001023.1 to universal coordinates 5389141..5408147
+Writing contig LJWW01001024.1 to universal coordinates 5408148..5427099
+Writing contig LJWW01001025.1 to universal coordinates 5427100..5446026
+Writing contig LJWW01001026.1 to universal coordinates 5446027..5464948
+Writing contig LJWW01001027.1 to universal coordinates 5464949..5483862
+Writing contig LJWW01001028.1 to universal coordinates 5483863..5502673
+Writing contig LJWW01000103.1 to universal coordinates 5502674..6101627
+Writing contig LJWW01001029.1 to universal coordinates 6101628..6120412
+Writing contig LJWW01001030.1 to universal coordinates 6120413..6139194
+Writing contig LJWW01001031.1 to universal coordinates 6139195..6157905
+Writing contig LJWW01001032.1 to universal coordinates 6157906..6176582
+Writing contig LJWW01001033.1 to universal coordinates 6176583..6195122
+Writing contig LJWW01001034.1 to universal coordinates 6195123..6213604
+Writing contig LJWW01001035.1 to universal coordinates 6213605..6232005
+Writing contig LJWW01001036.1 to universal coordinates 6232006..6250193
+Writing contig LJWW01001037.1 to universal coordinates 6250194..6268446
+Writing contig LJWW01001038.1 to universal coordinates 6268447..6286698
+Writing contig LJWW01000104.1 to universal coordinates 6286699..7084619
+Writing contig LJWW01001039.1 to universal coordinates 7084620..7102855
+Writing contig LJWW01001040.1 to universal coordinates 7102856..7121074
+More than 50 contigs.  Will stop printing messages
+A total of 666032 non-ACGTNX characters were seen in the genome.
+Running cat "data/AiptasiaGmapDb/AiptasiaGmapDb.genomecomp" | "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -U > "data/AiptasiaGmapDb/AiptasiaGmapDb.genomebits128"
+Running cat "data/AiptasiaGmapDb/AiptasiaGmapDb.genomecomp" | "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -k 15 -q 3  -D "data/AiptasiaGmapDb" -d AiptasiaGmapDb -N
+Counting positions in genome AiptasiaGmapDb (15 bp every 3 bp), position 0
+Counting positions in genome AiptasiaGmapDb (15 bp every 3 bp), position 100,000,000
+Counting positions in genome AiptasiaGmapDb (15 bp every 3 bp), position 200,000,000
+Number of positions: 256132296 => normal-sized genome
+Number of offsets: 67375165 => pages file not required
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -k 15 -q 3  -D "data/AiptasiaGmapDb" -d AiptasiaGmapDb -O "data/AiptasiaGmapDb/AiptasiaGmapDb.genomecomp"
+Offset compression types: bitpack64
+Allocating 16777216*1 bytes for packsizes
+Allocating 16777216*8 bytes for bitpacks
+Indexing offsets of oligomers in genome AiptasiaGmapDb (15 bp every 3 bp), position 0
+Indexing offsets of oligomers in genome AiptasiaGmapDb (15 bp every 3 bp), position 100,000,000
+Indexing offsets of oligomers in genome AiptasiaGmapDb (15 bp every 3 bp), position 200,000,000
+Writing 1073741825 offsets compressed via bitpack64...done
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -k 15 -q 3  -D "data/AiptasiaGmapDb" -d AiptasiaGmapDb -P "data/AiptasiaGmapDb/AiptasiaGmapDb.genomecomp"
+Looking for genome AiptasiaGmapDb in directory data/AiptasiaGmapDb
+Looking for index files in directory data/AiptasiaGmapDb
+  Pointers file is AiptasiaGmapDb.ref153offsets64meta
+  Offsets file is AiptasiaGmapDb.ref153offsets64strm
+  Positions file is AiptasiaGmapDb.ref153positions
+Expanding offsetsstrm into counters...done
+Allocating 229930016 bytes for counterstrm
+Trying to allocate 67375165*4 bytes of memory for positions...succeeded.  Building positions in memory.
+Indexing positions of oligomers in genome AiptasiaGmapDb (15 bp every 3 bp), position 0
+Indexing positions of oligomers in genome AiptasiaGmapDb (15 bp every 3 bp), position 100,000,000
+Indexing positions of oligomers in genome AiptasiaGmapDb (15 bp every 3 bp), position 200,000,000
+Writing 67375165 genomic positions to file data/AiptasiaGmapDb/AiptasiaGmapDb.ref153positions ...
+done
+Running "/shared/centos7/gsnap/2021-12-17/bin/gmapindex" -j 6  -D "data/AiptasiaGmapDb" -d AiptasiaGmapDb -Q "data/AiptasiaGmapDb/AiptasiaGmapDb.genomecomp"
+Writing regiondb
+Indexing offsets/positions of oligomers in genome AiptasiaGmapDb (6 bp every 1 bp), position 0
+Indexing offsets/positions of oligomers in genome AiptasiaGmapDb (6 bp every 1 bp), position 100,000,000
+Indexing offsets/positions of oligomers in genome AiptasiaGmapDb (6 bp every 1 bp), position 200,000,000
+Done

@@ -1,0 +1,94 @@
+-- Skipping CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/get_top_longest_fasta_entries.pl results/trinity_de_novo.transdecoder_dir/longest_orfs.cds 5000 5000 > results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.top_longest_5000, checkpoint [/scratch/peng.hsi/module-09-penghy27/results/trinity_de_novo.transdecoder_dir.__checkpoints/get_longest_orfs.ok] exists.
+-- Skipping CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/exclude_similar_proteins.pl results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.top_longest_5000 > results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.top_longest_5000.nr, checkpoint [/scratch/peng.hsi/module-09-penghy27/results/trinity_de_novo.transdecoder_dir.__checkpoints/nr.ok] exists.
+-- Skipping CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/get_top_longest_fasta_entries.pl results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.top_longest_5000.nr 500 > results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.top_500_longest, checkpoint [/scratch/peng.hsi/module-09-penghy27/results/trinity_de_novo.transdecoder_dir.__checkpoints/top_train_select.ok] exists.
+PCT_GC: 38.6
+-- Skipping CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/seq_n_baseprobs_to_loglikelihood_vals.pl results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.top_500_longest results/trinity_de_novo.transdecoder_dir/base_freqs.dat > results/trinity_de_novo.transdecoder_dir/hexamer.scores, checkpoint [/scratch/peng.hsi/module-09-penghy27/results/trinity_de_novo.transdecoder_dir.__checkpoints/hexamer_scores.ok] exists.
+-- Skipping CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/score_CDS_likelihood_all_6_frames.pl results/trinity_de_novo.transdecoder_dir/longest_orfs.cds results/trinity_de_novo.transdecoder_dir/hexamer.scores > results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.scores, checkpoint [/scratch/peng.hsi/module-09-penghy27/results/trinity_de_novo.transdecoder_dir.__checkpoints/score_cdss.ok] exists.
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/select_best_ORFs_per_transcript.pl --gff3_file results/trinity_de_novo.transdecoder_dir/longest_orfs.gff3 --cds_scores results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.scores  --min_length_auto_accept 590  --pfam_hits results/pfam.domtblout  --blast_hits results/blastPep_args.outfmt6  > results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.best_candidates.gff3 
+Selecting best orfsblastp output found (results/blastPep_args.outfmt6) and processing...
+PFAM output found (results/pfam.domtblout) and processing...
+
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/train_start_PWM.pl --transcripts data/trinity_de_novo/Trinity.fasta --selected_orfs results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.top_500_longest --out_prefix results/trinity_de_novo.transdecoder_dir/start_refinement
+Training start codon pattern recognition* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/build_atgPWM_+-.pl  --transcripts data/trinity_de_novo/Trinity.fasta  --selected_orfs results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.top_500_longest  --out_prefix results/trinity_de_novo.transdecoder_dir/start_refinement --pwm_left 20 --pwm_right 10 
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/feature_scoring.+-.pl  --features_plus results/trinity_de_novo.transdecoder_dir/start_refinement.+.features  --features_minus results/trinity_de_novo.transdecoder_dir/start_refinement.-.features  --atg_position 20  > results/trinity_de_novo.transdecoder_dir/start_refinement.feature.scores
+-round: 1
+-round: 2
+-round: 3
+-round: 4
+-round: 5
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/feature_scores_to_ROC.pl results/trinity_de_novo.transdecoder_dir/start_refinement.feature.scores > results/trinity_de_novo.transdecoder_dir/start_refinement.feature.scores.roc
+-parsing scores
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/plot_ROC.Rscript results/trinity_de_novo.transdecoder_dir/start_refinement.feature.scores.roc || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/compute_AUC.pl results/trinity_de_novo.transdecoder_dir/start_refinement.feature.scores.roc
+Can't exec "Rscript": No such file or directory at /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/compute_AUC.pl line 82.
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/make_seqLogo.Rscript results/trinity_de_novo.transdecoder_dir/start_refinement.+.pwm || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/make_seqLogo.Rscript results/trinity_de_novo.transdecoder_dir/start_refinement.-.pwm || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/deplete_feature_noise.pl  --features_plus results/trinity_de_novo.transdecoder_dir/start_refinement.+.features  --pwm_minus results/trinity_de_novo.transdecoder_dir/start_refinement.-.pwm  --out_prefix results/trinity_de_novo.transdecoder_dir/start_refinement.enhanced
+num features: 164	num_incorporate: 49
+-feature swap of score: 0.20219366207701 instead of -5.59505279924975
+-feature swap of score: -1.16406506287597 instead of -1.24313069342497
+-feature swap of score: 2.23702996706999 instead of -0.839891793829757
+-feature swap of score: 0.701185936535135 instead of -0.756962186268944
+-feature swap of score: 1.9011820352226 instead of -1.01806543405568
+-feature swap of score: -1.53586204822294 instead of -1.5474001677954
+-feature swap of score: 1.11320634565768 instead of -0.809130610219882
+-feature swap of score: 0.736207962170502 instead of -0.617277752872285
+-feature swap of score: 0.939117908191866 instead of 0.110768238735387
+-feature swap of score: 3.61552286827205 instead of -0.518150523027586
+-feature swap of score: 0.88633722790425 instead of 0.0248799199644559
+-feature swap of score: 0.0954988878705739 instead of -0.113468252031331
+-feature swap of score: 2.97225980354193 instead of 0.118196497024041
+-feature swap of score: 0.301922862826685 instead of 0.247702590293039
+-feature swap of score: 5.18406362961176 instead of 0.262405843646718
+-feature swap of score: 1.40254367631609 instead of 0.124594573708774
+-feature swap of score: 5.82000929441691 instead of 0.194784247183351
+-feature swap of score: 2.38602916930628 instead of 0.18273899110752
+-feature swap of score: 2.87969845918821 instead of 0.501402244207419
+-feature swap of score: 2.33260364723943 instead of 0.704017555055097
+-feature swap of score: 2.31615061096495 instead of 0.224523369571152
+-feature swap of score: 2.0554431095974 instead of 0.249718278590384
+-feature swap of score: 5.74492666474742 instead of 1.0004353364053
+-feature swap of score: 1.67520077507189 instead of 1.06128113996541
+-feature swap of score: 4.29361170496873 instead of 0.656162158748116
+-feature swap of score: 4.57231338640711 instead of 1.31263473319676
+-feature swap of score: 6.10708729713438 instead of 1.17124564295707
+-feature swap of score: 1.25998475748034 instead of 1.23021250528676
+-feature swap of score: 2.16472188548287 instead of 0.918622191277538
+-feature swap of score: 4.91270071275428 instead of 0.493810723312125
+-feature swap of score: 1.31675358378585 instead of 0.751033225036585
+-feature swap of score: 2.72368391056559 instead of 0.823942218183583
+-feature swap of score: 3.74613056506709 instead of 1.74998873707092
+-feature swap of score: 5.48530924856392 instead of 1.60412999568248
+-feature swap of score: 4.01273177923005 instead of 1.3416777836275
+-feature swap of score: 4.30138448075441 instead of 1.25213127222453
+-num feature swaps: 36
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/feature_scoring.+-.pl  --features_plus results/trinity_de_novo.transdecoder_dir/start_refinement.enhanced.+.features  --features_minus results/trinity_de_novo.transdecoder_dir/start_refinement.-.features  --atg_position 20  > results/trinity_de_novo.transdecoder_dir/start_refinement.enhanced.feature.scores
+-round: 1
+-round: 2
+-round: 3
+-round: 4
+-round: 5
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/feature_scores_to_ROC.pl results/trinity_de_novo.transdecoder_dir/start_refinement.enhanced.feature.scores > results/trinity_de_novo.transdecoder_dir/start_refinement.enhanced.feature.scores.roc
+-parsing scores
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/plot_ROC.Rscript results/trinity_de_novo.transdecoder_dir/start_refinement.enhanced.feature.scores.roc || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/compute_AUC.pl results/trinity_de_novo.transdecoder_dir/start_refinement.enhanced.feature.scores.roc
+Can't exec "Rscript": No such file or directory at /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/compute_AUC.pl line 82.
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/PWM/make_seqLogo.Rscript results/trinity_de_novo.transdecoder_dir/start_refinement.enhanced.+.pwm || :
+/usr/bin/env: Rscript: No such file or directory
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/start_codon_refinement.pl --transcripts data/trinity_de_novo/Trinity.fasta --gff3_file results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.best_candidates.gff3 --workdir results/trinity_de_novo.transdecoder_dir > results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.best_candidates.gff3.revised_starts.gff3
+Refining start codon selections.
+-number of revised start positions: 571
+* Running CMD: cp results/trinity_de_novo.transdecoder_dir/longest_orfs.cds.best_candidates.gff3.revised_starts.gff3 Trinity.fasta.transdecoder.gff3
+copying output to final output file: Trinity.fasta.transdecoder.gff3* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/gff3_file_to_bed.pl Trinity.fasta.transdecoder.gff3 > Trinity.fasta.transdecoder.bed
+Making bed file: Trinity.fasta.transdecoder.bed
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/gff3_file_to_proteins.pl --gff3 Trinity.fasta.transdecoder.gff3 --fasta data/trinity_de_novo/Trinity.fasta  --genetic_code Universal > Trinity.fasta.transdecoder.pep
+Making pep file: Trinity.fasta.transdecoder.pep
+* Running CMD: /shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/opt/transdecoder/util/gff3_file_to_proteins.pl --gff3 Trinity.fasta.transdecoder.gff3 --fasta data/trinity_de_novo/Trinity.fasta --seqType CDS  --genetic_code Universal > Trinity.fasta.transdecoder.cds
+Making cds file: Trinity.fasta.transdecoder.cds
+transdecoder is finished.  See output files Trinity.fasta.transdecoder.*
+
+

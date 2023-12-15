@@ -1,0 +1,150 @@
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip02.R1.fastq data/rawreads/Aip02.R2.fastq data/trimmed/paired/Aip02.R1.fastq data/trimmed/unpaired/Aip02.R1.fastq data/trimmed/paired/Aip02.R2.fastq data/trimmed/unpaired/Aip02.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 39478 Both Surviving: 31478 (79.74%) Forward Only Surviving: 3501 (8.87%) Reverse Only Surviving: 1455 (3.69%) Dropped: 3044 (7.71%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip05.R1.fastq data/rawreads/Aip05.R2.fastq data/trimmed/paired/Aip05.R1.fastq data/trimmed/unpaired/Aip05.R1.fastq data/trimmed/paired/Aip05.R2.fastq data/trimmed/unpaired/Aip05.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 44431 Both Surviving: 34475 (77.59%) Forward Only Surviving: 4803 (10.81%) Reverse Only Surviving: 1363 (3.07%) Dropped: 3790 (8.53%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip06.R1.fastq data/rawreads/Aip06.R2.fastq data/trimmed/paired/Aip06.R1.fastq data/trimmed/unpaired/Aip06.R1.fastq data/trimmed/paired/Aip06.R2.fastq data/trimmed/unpaired/Aip06.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 50142 Both Surviving: 39995 (79.76%) Forward Only Surviving: 4277 (8.53%) Reverse Only Surviving: 1778 (3.55%) Dropped: 4092 (8.16%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip12.R1.fastq data/rawreads/Aip12.R2.fastq data/trimmed/paired/Aip12.R1.fastq data/trimmed/unpaired/Aip12.R1.fastq data/trimmed/paired/Aip12.R2.fastq data/trimmed/unpaired/Aip12.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 50813 Both Surviving: 40011 (78.74%) Forward Only Surviving: 4888 (9.62%) Reverse Only Surviving: 1847 (3.63%) Dropped: 4067 (8.00%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip13.R1.fastq data/rawreads/Aip13.R2.fastq data/trimmed/paired/Aip13.R1.fastq data/trimmed/unpaired/Aip13.R1.fastq data/trimmed/paired/Aip13.R2.fastq data/trimmed/unpaired/Aip13.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 76698 Both Surviving: 59779 (77.94%) Forward Only Surviving: 7731 (10.08%) Reverse Only Surviving: 3166 (4.13%) Dropped: 6022 (7.85%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip14.R1.fastq data/rawreads/Aip14.R2.fastq data/trimmed/paired/Aip14.R1.fastq data/trimmed/unpaired/Aip14.R1.fastq data/trimmed/paired/Aip14.R2.fastq data/trimmed/unpaired/Aip14.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 44951 Both Surviving: 36390 (80.95%) Forward Only Surviving: 3320 (7.39%) Reverse Only Surviving: 1769 (3.94%) Dropped: 3472 (7.72%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip15.R1.fastq data/rawreads/Aip15.R2.fastq data/trimmed/paired/Aip15.R1.fastq data/trimmed/unpaired/Aip15.R1.fastq data/trimmed/paired/Aip15.R2.fastq data/trimmed/unpaired/Aip15.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 56117 Both Surviving: 44036 (78.47%) Forward Only Surviving: 5638 (10.05%) Reverse Only Surviving: 1638 (2.92%) Dropped: 4805 (8.56%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip17.R1.fastq data/rawreads/Aip17.R2.fastq data/trimmed/paired/Aip17.R1.fastq data/trimmed/unpaired/Aip17.R1.fastq data/trimmed/paired/Aip17.R2.fastq data/trimmed/unpaired/Aip17.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 48225 Both Surviving: 38810 (80.48%) Forward Only Surviving: 4100 (8.50%) Reverse Only Surviving: 1552 (3.22%) Dropped: 3763 (7.80%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip18.R1.fastq data/rawreads/Aip18.R2.fastq data/trimmed/paired/Aip18.R1.fastq data/trimmed/unpaired/Aip18.R1.fastq data/trimmed/paired/Aip18.R2.fastq data/trimmed/unpaired/Aip18.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 51838 Both Surviving: 41221 (79.52%) Forward Only Surviving: 4653 (8.98%) Reverse Only Surviving: 1876 (3.62%) Dropped: 4088 (7.89%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip19.R1.fastq data/rawreads/Aip19.R2.fastq data/trimmed/paired/Aip19.R1.fastq data/trimmed/unpaired/Aip19.R1.fastq data/trimmed/paired/Aip19.R2.fastq data/trimmed/unpaired/Aip19.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 49048 Both Surviving: 39185 (79.89%) Forward Only Surviving: 4382 (8.93%) Reverse Only Surviving: 1611 (3.28%) Dropped: 3870 (7.89%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip20.R1.fastq data/rawreads/Aip20.R2.fastq data/trimmed/paired/Aip20.R1.fastq data/trimmed/unpaired/Aip20.R1.fastq data/trimmed/paired/Aip20.R2.fastq data/trimmed/unpaired/Aip20.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 53470 Both Surviving: 42234 (78.99%) Forward Only Surviving: 5067 (9.48%) Reverse Only Surviving: 1658 (3.10%) Dropped: 4511 (8.44%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip21.R1.fastq data/rawreads/Aip21.R2.fastq data/trimmed/paired/Aip21.R1.fastq data/trimmed/unpaired/Aip21.R1.fastq data/trimmed/paired/Aip21.R2.fastq data/trimmed/unpaired/Aip21.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 69019 Both Surviving: 55596 (80.55%) Forward Only Surviving: 5684 (8.24%) Reverse Only Surviving: 2499 (3.62%) Dropped: 5240 (7.59%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip23.R1.fastq data/rawreads/Aip23.R2.fastq data/trimmed/paired/Aip23.R1.fastq data/trimmed/unpaired/Aip23.R1.fastq data/trimmed/paired/Aip23.R2.fastq data/trimmed/unpaired/Aip23.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 55109 Both Surviving: 44985 (81.63%) Forward Only Surviving: 3969 (7.20%) Reverse Only Surviving: 2209 (4.01%) Dropped: 3946 (7.16%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip24.R1.fastq data/rawreads/Aip24.R2.fastq data/trimmed/paired/Aip24.R1.fastq data/trimmed/unpaired/Aip24.R1.fastq data/trimmed/paired/Aip24.R2.fastq data/trimmed/unpaired/Aip24.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 42465 Both Surviving: 33642 (79.22%) Forward Only Surviving: 4007 (9.44%) Reverse Only Surviving: 1347 (3.17%) Dropped: 3469 (8.17%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip25.R1.fastq data/rawreads/Aip25.R2.fastq data/trimmed/paired/Aip25.R1.fastq data/trimmed/unpaired/Aip25.R1.fastq data/trimmed/paired/Aip25.R2.fastq data/trimmed/unpaired/Aip25.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 57835 Both Surviving: 46138 (79.78%) Forward Only Surviving: 5093 (8.81%) Reverse Only Surviving: 2101 (3.63%) Dropped: 4503 (7.79%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip26.R1.fastq data/rawreads/Aip26.R2.fastq data/trimmed/paired/Aip26.R1.fastq data/trimmed/unpaired/Aip26.R1.fastq data/trimmed/paired/Aip26.R2.fastq data/trimmed/unpaired/Aip26.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 42305 Both Surviving: 33184 (78.44%) Forward Only Surviving: 4357 (10.30%) Reverse Only Surviving: 1263 (2.99%) Dropped: 3501 (8.28%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip28.R1.fastq data/rawreads/Aip28.R2.fastq data/trimmed/paired/Aip28.R1.fastq data/trimmed/unpaired/Aip28.R1.fastq data/trimmed/paired/Aip28.R2.fastq data/trimmed/unpaired/Aip28.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 39699 Both Surviving: 29921 (75.37%) Forward Only Surviving: 5010 (12.62%) Reverse Only Surviving: 966 (2.43%) Dropped: 3802 (9.58%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip29.R1.fastq data/rawreads/Aip29.R2.fastq data/trimmed/paired/Aip29.R1.fastq data/trimmed/unpaired/Aip29.R1.fastq data/trimmed/paired/Aip29.R2.fastq data/trimmed/unpaired/Aip29.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 62517 Both Surviving: 49342 (78.93%) Forward Only Surviving: 5858 (9.37%) Reverse Only Surviving: 2041 (3.26%) Dropped: 5276 (8.44%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip30.R1.fastq data/rawreads/Aip30.R2.fastq data/trimmed/paired/Aip30.R1.fastq data/trimmed/unpaired/Aip30.R1.fastq data/trimmed/paired/Aip30.R2.fastq data/trimmed/unpaired/Aip30.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 54710 Both Surviving: 43250 (79.05%) Forward Only Surviving: 5268 (9.63%) Reverse Only Surviving: 1717 (3.14%) Dropped: 4475 (8.18%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip32.R1.fastq data/rawreads/Aip32.R2.fastq data/trimmed/paired/Aip32.R1.fastq data/trimmed/unpaired/Aip32.R1.fastq data/trimmed/paired/Aip32.R2.fastq data/trimmed/unpaired/Aip32.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 49967 Both Surviving: 37934 (75.92%) Forward Only Surviving: 5821 (11.65%) Reverse Only Surviving: 1601 (3.20%) Dropped: 4611 (9.23%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip33.R1.fastq data/rawreads/Aip33.R2.fastq data/trimmed/paired/Aip33.R1.fastq data/trimmed/unpaired/Aip33.R1.fastq data/trimmed/paired/Aip33.R2.fastq data/trimmed/unpaired/Aip33.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 64003 Both Surviving: 51796 (80.93%) Forward Only Surviving: 4964 (7.76%) Reverse Only Surviving: 2427 (3.79%) Dropped: 4816 (7.52%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip34.R1.fastq data/rawreads/Aip34.R2.fastq data/trimmed/paired/Aip34.R1.fastq data/trimmed/unpaired/Aip34.R1.fastq data/trimmed/paired/Aip34.R2.fastq data/trimmed/unpaired/Aip34.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 41395 Both Surviving: 33574 (81.11%) Forward Only Surviving: 3085 (7.45%) Reverse Only Surviving: 1592 (3.85%) Dropped: 3144 (7.60%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip35.R1.fastq data/rawreads/Aip35.R2.fastq data/trimmed/paired/Aip35.R1.fastq data/trimmed/unpaired/Aip35.R1.fastq data/trimmed/paired/Aip35.R2.fastq data/trimmed/unpaired/Aip35.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 66868 Both Surviving: 50595 (75.66%) Forward Only Surviving: 8585 (12.84%) Reverse Only Surviving: 1839 (2.75%) Dropped: 5849 (8.75%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Aip36.R1.fastq data/rawreads/Aip36.R2.fastq data/trimmed/paired/Aip36.R1.fastq data/trimmed/unpaired/Aip36.R1.fastq data/trimmed/paired/Aip36.R2.fastq data/trimmed/unpaired/Aip36.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 50506 Both Surviving: 40261 (79.72%) Forward Only Surviving: 4510 (8.93%) Reverse Only Surviving: 1719 (3.40%) Dropped: 4016 (7.95%)
+TrimmomaticPE: Completed successfully
+TrimmomaticPE: Started with arguments:
+ -threads 1 -phred33 data/rawreads/Unk.R1.fastq data/rawreads/Unk.R2.fastq data/trimmed/paired/Unk.R1.fastq data/trimmed/unpaired/Unk.R1.fastq data/trimmed/paired/Unk.R2.fastq data/trimmed/unpaired/Unk.R2.fastq HEADCROP:0 ILLUMINACLIP:/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2/adapters/TruSeq3-PE.fa:2:30:10 LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36
+Using PrefixPair: 'TACACTCTTTCCCTACACGACGCTCTTCCGATCT' and 'GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT'
+ILLUMINACLIP: Using 1 prefix pairs, 0 forward/reverse sequences, 0 forward only sequences, 0 reverse only sequences
+Input Read Pairs: 37961 Both Surviving: 26590 (70.05%) Forward Only Surviving: 5354 (14.10%) Reverse Only Surviving: 1540 (4.06%) Dropped: 4477 (11.79%)
+TrimmomaticPE: Completed successfully
