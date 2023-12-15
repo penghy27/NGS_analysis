@@ -5,7 +5,7 @@ This Northeastern academic project contains the code and documentation for a com
 ## Genome Assembly and Quality Evaluation
 
 Performed genome assembly and quality evaluation using Trimmomatic, Spades, and Quast.  
-[Genome Assembly](https://github.com/NU-Bioinformatics/module-06-penghy27.git](https://github.com/penghy27/NU-NGS_analysis/tree/main/GenomeAssembly)
+[Genome Assembly](https://github.com/penghy27/NU-NGS_analysis/tree/main/GenomeAssembly)
   
 ## RNA-seq Analysis
 
