@@ -10,19 +10,19 @@ Performed genome assembly and quality evaluation using Trimmomatic, Spades, and 
 ## RNA-seq Analysis
 
 Conducted RNA-seq read alignment (GSNAP) and de novo assembly (Trinity) for *Aiptasia pallida*.  
-[RNA-seq Analysis](https://github.com/NU-Bioinformatics/module-07-penghy27.git)  
-[de novo Assembly](https://github.com/NU-Bioinformatics/module-07-penghy27.git)
+[RNA-seq Analysis](https://github.com/penghy27/NU-NGS_analysis/tree/main/RNAseqAnalysis)
+[de novo Assembly](https://github.com/penghy27/NU-NGS_analysis/tree/main/RNAseqAnalysis)
 
 ## Protein Sequence Prediction and Annotation
 
 Predicted protein sequences and candidate coding regions with BLAST and TransDecoder.
 Aligned protein sequences with SwissProt on Northeastern’s High-Performance Computing platform.  
-[Protein Sequence Analysis](https://github.com/NU-Bioinformatics/module-09-penghy27.git)
+[Protein Sequence Analysis](https://github.com/penghy27/NU-NGS_analysis/tree/main/ProteinSequenceAnalysis)
 
 ## Functional Annotation
 
 Utilized KEGG and GO databases for comprehensive annotation of protein sequences.  
-[Functional Annotation](https://github.com/NU-Bioinformatics/module-10-penghy27.git)  
+[Functional Annotation](https://github.com/penghy27/NU-NGS_analysis/tree/main/FunctionalAnnotation)
 
   
 Please refer to the individual repositories linked above for detailed code, data, and documentation related to each specific analysis task.  
