@@ -5,10 +5,10 @@ Purpose: Aligning RNA sequences reads of sea anemones (*Aiptasia pallida*).
 
 The following is working on Discovery. Running this alignment in /scratch/username/ with a computing node.
 
-# Comprehensive RNA-Seq Data Processing and Analysis Pipeline
+# Short read alignment of RNA-seq with GSNAP
 
 ## Overview  
-This project focuses on the use of RNA-Seq aligners for genomic analysis tasks like RNA-Sequencing (RNA-Seq). We demonstrate the use of short-read aligners like GSNAP, which are splice-aware and can handle the complexity of RNA-Seq data. We also cover de-novo transcriptome assembly for cases without a reference genome. This repository contains scripts and instructions for trimming reads, building reference genome indexes, aligning reads, and post-alignment processing using various bioinformatics tools.
+This project contains scripts and instructions for trimming reads, building reference genome indexes, aligning reads to a reference genome, and performing post-alignment processing (such as converting SAM to BAM files and indexing BAM files) using various bioinformatics tools. We use short-read aligners like GSNAP, which are splice-aware and can handle the complexity of RNA-Seq data. 
 
 ## Methods  
 ### 1. Data 
