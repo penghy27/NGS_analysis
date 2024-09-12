@@ -1,0 +1,50 @@
+20221107 BINF6308 Module08
+
+** de novo whole genome assembly
+- why cost expensive?
+- no reference sequence
+- short reads(?) for ???
+- more data assembly??
+
+
+** Transcriptome assembly
+why harder?
+- gap: intron is removed
+- different splicing...or junctiton....
+- different reads to support different conformation?
+
+
+** Genome assembly -> transcriptome assembly
+gap -> unknown sequence?
+
+
+** Trinity for transcriptome assembly
+after assembling short reads...,
+contigs cluster is the important step, the contigs are similar but not identical
+represnt different forms(isomer) to that gene. differs from DNA.
+bcoz transcript share from one gene...??
+-> isomer -->> draw the graph: de Bruijin graphs...
+-> reconstructed isoforms...
+
+
+** Trinity also uses kmers for faster contig assembly
+
+
+** Merging bam files
+bam: initial files(?)
+-b: binary file
+sam: human readabe file(?!)
+
+
+** Assessing Trinity output
+total trinity "genes" --> 26k within that cluster (isomer from the same "gene"??????)
+
+
+** IGV (Integrated Genomics Viewer)
+
+
+
+
+
+
+
