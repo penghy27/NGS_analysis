@@ -88,12 +88,13 @@ To run the workflow:
 
 - NCBI Sequence Read Archive (SRA): [SRA Website](https://www.ncbi.nlm.nih.gov/sra)
 - Trimmomatic: [Trimmomatic Website](http://www.usadellab.org/cms/?page=trimmomatic)
-- SPAdes: [SPAdes Website](https://cab.spbu.ru/software/spades/)
+- SPAdes: [SPAdes Website](https://ablab.github.io/spades/)
 - QUAST: [QUAST Website](http://quast.sourceforge.net/)
 
 ## Analysis
 ### Conclusion:
-The assembly was a bit good for two reasons. First, the analysis shows N50 is 25496 bp while the total length is about 4.5 million bp. The length of N50 is long so we assume it will contain more complete information. In addition, the number of contigs which is longer than 25000 bp was 54. It means the these contigs are not short pieces which might not interfere with more gaps.
+The assembly quality appears to be relatively good based on several key metrics. The N50 value of 25,496 bp suggests a moderate level of contiguity, with half of the assembled genome length contained in contigs of at least this size. Additionally, 54 contigs are longer than 25,000 bp, indicating a reasonable level of assembly contiguity with fewer fragmented pieces. The absence of N's (gaps) in the assembly, as indicated by the 0.00 N's per 100 kbp, is a significant strength, suggesting high accuracy in the sequencing and assembly process. The total assembly length of about 4.5 million bp is close to the expected size for a bacterial genome, and the largest contig is 104,244 bp, suggesting that some large genomic regions are well-represented. Together, these metrics imply that while the assembly is not perfect, it provides a reasonably contiguous and accurate representation of the genome.
+
  
 
 **key metrics**
