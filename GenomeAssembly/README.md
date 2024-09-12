@@ -3,100 +3,93 @@ Author: penghy27 (Hsiao-Yu Peng)
 Date: November 7th, 2022  
 Purpose: Assemble the Rhodobacter spheroides genome
 
-## Methods  
-### 1. Requesting a interactive job via slurm  
-We use Discovery high-computing platform to run genome assembly. We will use the following option when testing our scripts and other interactive analysis pieces.
-```
-srun \
-  --partition=short \  # choose from debug, express, and short  
-  --pty \  # direct input and output back to your user shell (terminal)  
-  --export=ALL \  # export the entire environment at the end of a job  
-  --nodes=1 \  # nodes to reserve  
-  --ntasks=1 \  # tasks per node to reserve  
-  --mem=10Gb \  # memory to reserve  
-  --time=00:20:00 \  # time limit in hh:mm:ss MUST be at or below timelimit of the partition  
-  /bin/bash # we will use a bash command  
- 
-exit  # when ready to release the resource 
-```
+# Genome Assembly and Quality Analysis Pipeline
 
-### 2. Set up Anaconda environment  
-In this class, BINF6308, we will use a custom Anaconda environment (including Python and some of its libraries like BioPython). Access these directly by running:
-```
-module load anaconda3/2021.11  
-source activate BINF-12-2021  
-```
+## Overview
 
-### 3. Obtaining NGS Data  
-Publication of a genome paper generally requires making the raw sequencing data publicly available, and the NCBI Sequence Read Archive (https://www.ncbi.nlm.nih.gov/sra), or SRA, is the repository most often used for this purpose. We'll use the SRA to retrieve sequence data, then use one of the bacterial genomeassemblers to assemble the reads into a genome. The command-line utility to retrieve sequence data in FASTQ format from the SRA is ```fasterq-dump```.  
+This project involves retrieving raw sequencing data from the NCBI Sequence Read Archive (SRA), performing quality trimming, assembling a bacterial genome, and analyzing the quality of the assembly. The project follows a typical bioinformatics workflow for genome assembly from raw sequencing data, which includes data retrieval, preprocessing, assembly, and quality assessment.
 
-```bash getNGS.sh```  
-```
-#!/usr/bin/env bash  
-# getNGS.sh 
+## Methods
 
-# Retrieve the Rhodobacter spheroides NGS reads.
-fasterq-dump --split-3 SRR522244  # --split-3: writes single reads in special file
-```
+### 1. Data Retrieval
 
-### 4. Quality Trimming with Trimmomatic    
-The purpose of trimming in genome assembly is to remove low-quality of DNA reads. In addition, it also removes any adapter sequences from the reads. Sometimes during library preparation, extra copies of adapters get attached to thebeginning or end of the cDNA fragments. These adapter sequences may be left over after the DNA fragments are amplified, and they can interfere with genome assembly if they are not removed.  We will use Trimmomatic as a trimmer in this class.  
-  
-```bash trim.sh```  
-```
-#!/usr/bin/env bash  
-# trim.sh  
-PATH_TO_TRIMMOMATIC="/shared/centos7/anaconda3/2021.11/envs/BINF-12-2021/pkgs/trimmomatic-0.39-hdfd78af_2/share/trimmomatic-0.39-2"  
-function trim {  
-    trimmomatic PE \  # PE indiates we have paired-end reads    
-    -threads 1 -phred33 \  # -threads indicates how many server threads to use for this job. -phred33 indicates the quality encoding method used for the reads.   
-    ../data/SRR522244_1.fastq \  
-    ../data/SRR522244_2.fastq \  
-    ../data/trimmed/paired/Rhodo.R1.paired.fastq \  
-    ../data/trimmed/unpaired/Rhodo.R1.unpaired.fastq \  
-    ../data/trimmed/paired/Rhodo.R2.paired.fastq \  
-    ../data/trimmed/unpaired/Rhodo.R2.unpaired.fastq \  
-    HEADCROP:0 \  
-    ILLUMINACLIP:$PATH_TO_TRIMMOMATIC/adapters/TruSeq3-PE.fa:2:30:10 \  
-    LEADING:20 TRAILING:20 SLIDINGWINDOW:4:30 MINLEN:36  
-}  
-trim  
-```
+The raw sequencing data is obtained from the [NCBI Sequence Read Archive (SRA)](https://www.ncbi.nlm.nih.gov/sra), a repository for storing raw sequencing data. The SRA allows researchers to access raw sequencing reads, which can then be processed for various downstream analyses.
 
-### 5. Genome assembly  
-We'll use the SPAdes assembler, so run ```spades.py``` without any parameters to see the SPAdes help menu. Based on the output of ```spades.py```(help), write a shell script to assemble the Rhodobacter genome using just the quality-trimmedreads in ```data/trimmed/paired```. Specify rhodo as the output directory.  
-  
-```bash runSpades.sh```  
-```
-#!/usr/bin/enn bash
-# runSpades.sh
+### 2. Quality Trimming
 
-mkdir -p "../results/rhodo/"
+**Tool Used: [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)**
 
- function Spades {  
-     spades.py \  
-     -1 ../data/trimmed/paired/Rhodo.R1.paired.fastq \  # -1: file with forward paired-end reads  
-     -2 ../data/trimmed/paired/Rhodo.R2.paired.fastq \  # -2: file with reverse paired-end reads  
-     -o ../results/rhodo  # -o: directory to store all the resulting files  
-}
+- **Description**: Trimmomatic is a Java-based tool for trimming low-quality bases from sequencing reads and removing adapter sequences. It utilizes a sliding window approach to assess the quality of reads and trim sequences where quality scores drop below a specified threshold.
+- **Purpose**: Ensures that low-quality sequences and adapter contaminations are removed before genome assembly, which improves the accuracy of the assembly process.
+- **Command Line Usage**: A shell script is used to run Trimmomatic for paired-end FASTQ reads to generate quality-trimmed reads for assembly.
 
-Spades # runs the fuction Spades
-```
+### 3. Genome Assembly
 
-### 6. Checking the quality of your assembly with QUAST  
-After the assembly finishes, use ```quast.py``` to run a basic analysis report for your genome and determine the N50 for your assembly.  
-  
-```bash runQuast.sh```  
-```
-#!/urs/bin/env bash  
-# runQuast.sh  
+**Tool Used: [SPAdes](https://cab.spbu.ru/software/spades/)**
 
- function Quast {  
-     quast.py ../results/rhodo/contigs.fasta  
- }  
-  
-Quast  
-```
+- **Description**: SPAdes (St. Petersburg genome assembler) is a popular assembler for bacterial genomes that reconstructs genomes from short-read sequencing data.
+- **Purpose**: Converts quality-trimmed sequencing reads into assembled contigs, which represent the genome of the target organism.
+- **Command Line Usage**: The `spades.py` program is run with specific parameters to assemble the genome from quality-trimmed reads, with the output directed to a specified folder (`rhodo`).
+
+### 4. Quality Assessment of Assembly
+
+**Tool Used: [QUAST](http://quast.sourceforge.net/)**
+
+- **Description**: QUAST (Quality Assessment Tool for Genome Assemblies) evaluates the quality of assembled contigs by providing various metrics such as N50, number of contigs, and other assembly statistics.
+- **Purpose**: Provides a detailed analysis of the genome assembly quality to assess its completeness and accuracy.
+- **Command Line Usage**: The `quast.py` script is run to generate a basic analysis report for the assembled genome, helping to determine its overall quality and statistics like N50.
+
+### 5. Workflow Automation Script
+
+To streamline the entire process of genome assembly and quality analysis, a shell script (`assembleGenome.sh`) is provided that combines all the steps into a single, automated workflow. This script is designed to run on an HPC (High-Performance Computing) cluster using the SLURM job scheduling system.
+
+### Script Description
+The script, `assembleGenome.sh`, executes the following steps in sequence:
+
+1. **Job Setup**: The script begins by setting up the SLURM job parameters, such as partition type, job name, time limit, number of nodes, tasks per node, and output file naming convention.
+   
+2. **Environment Preparation**: Loads the required Anaconda environment (`BINF-12-2021`) to ensure that all necessary bioinformatics tools and dependencies (Trimmomatic, SPAdes, QUAST) are available.
+
+3. **Data Retrieval**: Runs a sub-script (`getNGS.sh`) to download raw sequencing data from the SRA for the specified organism (`Rhodo`) and SRR ID (`SRR522244`).
+
+4. **Quality Trimming**: Executes the `trim.sh` script, which uses Trimmomatic to remove low-quality sequences and adapter contamination from the raw reads.
+
+5. **Genome Assembly**: Invokes the `runSpades.sh` script to assemble the quality-trimmed reads into contigs using the SPAdes assembler.
+
+6. **Quality Assessment**: Runs the `runQuast.sh` script to analyze the quality of the assembled genome using QUAST, generating metrics such as N50 and the number of contigs.
+
+7. **Completion**: Outputs timestamps at each step to provide a clear log of the workflow's progress and completion.
+
+
+
+## Usage
+
+1. **Data Retrieval**: Obtain raw sequencing reads from the SRA.
+2. **Quality Trimming**: Use the provided shell script to run Trimmomatic for quality trimming of raw reads.
+3. **Genome Assembly**: Run the `spades.py` script to assemble the quality-trimmed reads.
+4. **Quality Assessment**: Use `quast.py` to analyze the quality of the assembled genome.
+5. **Workflow Automation**:
+
+To run the workflow:
+
+- Make sure you have access to a computing cluster with SLURM installed and the necessary modules (Anaconda, bioinformatics tools) available.
+- Modify the script as needed to specify the organism and SRR ID. The current script uses `Rhodo` as the organism and `SRR522244` as the SRR ID.
+- Submit the job script to the SLURM scheduler with `sbatch assembleGenome.sh`.
+
+
+## Scripts
+
+- `trim.sh`: Shell script for trimming paired-end FASTQ reads using Trimmomatic.
+- `runSpades.sh`: Shell script for assembling the genome using SPAdes.
+- `runQuast.sh`: Shell script for quality analysis of the assembled genome using QUAST.
+- `assembleGenome.sh`: Shell script combining all the steps, including genome assembly and quality analysis, into automated workflow.
+
+## References
+
+- NCBI Sequence Read Archive (SRA): [SRA Website](https://www.ncbi.nlm.nih.gov/sra)
+- Trimmomatic: [Trimmomatic Website](http://www.usadellab.org/cms/?page=trimmomatic)
+- SPAdes: [SPAdes Website](https://cab.spbu.ru/software/spades/)
+- QUAST: [QUAST Website](http://quast.sourceforge.net/)
 
 ## Analysis
 ### Conclusion:
