@@ -19,7 +19,9 @@ This project aims to annotate species-specific UniProt IDs from BLAST results wi
 BLAST: Previously used to align ORFs to SwissProt.
 KEGG API: Accessed via Python `requests` to retrieve KEGG Ortholog IDs and pathways.
 
-### 3. Script: `addKEGGPathways.py`
+### 3. Script: 
+> `addKEGGPathways.py`
+
 The core of the project is the `addKEGGPathways.py` script, which automates the annotation process. Below are the required functionalities included in the script:
 
 - `get_args()`: Retrieves command-line arguments including input filename, e-value threshold, and output filename.
@@ -31,6 +33,8 @@ The core of the project is the `addKEGGPathways.py` script, which automates the 
 - `addKEGGPathways()`: Ties together the above functions to append KEGG Ortholog ID, KEGG Pathway ID, and description to each high-confidence BLAST result, skipping Path IDs that start with 'path
 ' and including only 'path
 ' versions.
+
+> `test_addKEGGPathway.py`: Test `addKEGGPathways.py`
 
 
 Expected output:
