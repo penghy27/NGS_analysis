@@ -3,7 +3,7 @@ Author: penghy27 (Hsiao-Yu Peng)
 Date: November 20th, 2022  
 Purpose: Using Trinity for both reference-guided and de novo assemblies.
 
-# Short Read Alignment and Transcriptome Assembly with Trinity
+# Reference-Guided and De Novo Assembly of RNA-Seq with Trinity
 
 ## Overview
 
