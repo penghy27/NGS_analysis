@@ -11,7 +11,7 @@ This project aims to annotate species-specific UniProt IDs from BLAST results wi
 ## Methods
 
 ### 1. Input Data
-- BLAST Results: The input file (alignPredicted.txt) contains the BLAST results of predicted proteins aligned to the SwissProt database.
+- BLAST Results: The input file (`alignPredicted.txt`) contains the BLAST results of predicted proteins aligned to the SwissProt database.
 - KEGG API: The KEGG API is used to convert UniProt IDs to KEGG Ortholog IDs and retrieve associated KEGG pathway information.
 
 ### 2. Tools Used
@@ -19,7 +19,7 @@ BLAST: Previously used to align ORFs to SwissProt.
 KEGG API: Accessed via Python `requests` to retrieve KEGG Ortholog IDs and pathways.
 
 ### 3. Script: `addKEGGPathways.py`
-The core of the project is the addKEGGPathways.py script, which automates the annotation process. Below are the required functionalities included in the script:
+The core of the project is the `addKEGGPathways.py` script, which automates the annotation process. Below are the required functionalities included in the script:
 
 - `get_args()`: Retrieves command-line arguments including input filename, e-value threshold, and output filename.
 - `getUniProtFromBlast(blast_line, threshold)`: Extracts UniProt IDs from BLAST results if the e-value is below the specified threshold.
