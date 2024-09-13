@@ -28,9 +28,6 @@ TransDecoder is a tool designed to identify likely coding sequences from transcr
 - **Protein Domain Search with HMMER (hmmscan)**: `hmmscan` identifies protein domains by comparing predicted protein sequences against protein profile HMMs (Hidden Markov Model).
 - **Protein Prediction**: The final step involved `TransDecoder.Predict`, which refines protein predictions using BLAST and HMMER results, generating a protein FASTA file (`*.pep`).
 
-### 4. Shell Scripting and Command-Line Tools
-The entire pipeline is automated using shell scripts, making it adaptable for bioinformatics pipelines. The scripts automate processes such as extracting sequences, running BLAST queries, and running TransDecoder commands for protein prediction.
-
 ## Scripts
 - `longOrfs_args.sh`: This script identifies long open reading frames (ORFs) in the input transcriptome file using TransDecoder.
 - `blastpep_args`: Run a BLAST protein search (`blastp`) on a set of query sequences against the SwissProt database, guide the prediction process.
