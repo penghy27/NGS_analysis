@@ -20,7 +20,7 @@ BLAST: Previously used to align ORFs to SwissProt.
 KEGG API: Accessed via Python `requests` to retrieve KEGG Ortholog IDs and pathways.
 
 ### 3. Script: 
-> `addKEGGPathways.py`
+#### 3-1. `addKEGGPathways.py`
 
 The core of the project is the `addKEGGPathways.py` script, which automates the annotation process. Below are the required functionalities included in the script:
 
@@ -34,10 +34,10 @@ The core of the project is the `addKEGGPathways.py` script, which automates the 
 ' and including only 'path
 ' versions.
 
-> `test_addKEGGPathway.py`: Test `addKEGGPathways.py`
+#### 3-2. `test_addKEGGPathway.py`: Test `addKEGGPathways.py`
 
 
-Expected output:
+### Expected output:
 ```
 TRINITY_DN21437_c0_g1_i1.p1     Q13496  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase   ko:K01108 path:ko00562  Inositol phosphate metabolism
 TRINITY_DN21437_c0_g1_i1.p1     Q13496  132     603     132     82      62.121  1.84e-60        RecName: Full=Myotubularin; AltName: Full=Phosphatidylinositol-3,5-bisphosphate 3-phosphatase; AltName: Full=Phosphatidylinositol-3-phosphate phosphatase   ko:K01108 path:ko01100  Metabolic pathways
