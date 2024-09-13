@@ -1,33 +1,36 @@
-## module-10-penghy27  
+# module-10-penghy27  
 Author: penghy27 (Hsiao-Yu Peng)  
 Date: December 7th, 2022  
-Purpose: This program takes 3 provided commands, including input file, threshold value, output file name, and then gets a file with BLAST line, keggOrthoID, kegg Pathway ID, and KeggPathway description. The input file, alignPredicted.txt, is from module-09-penghy27, we used BLAST to find hits in the SwissProt database for the ORFs. The SwissProt IDs are species-specific, but we want to annotate to a species-independent ortholog ID.   
-(Note: Here we Getting API data in Python with ```requests```)  
-The steps mainly are:
-1. ```get_filehandle(file=None, mode=None)``` gets input file as filehandle
-2. ```getUniProtFromBlast(blast_line, threshold)``` gets uniprotein ID from BLAST  
- 
-3. ```loadKeggPathways()``` gets all the path IDs and their associated path descriptions.
 
-4. ```getKeggGenes(uniprotID)``` takes a uniprotID and return the list of all keggGenes associated with that uniprotID.   
-  
-5. ```getKeggOrthology(keggGeneID)```gets the KEGG ortholog for one KEGG protein ID.    
+# Annotating SwissProt Hits with KEGG Ortholog IDs
 
-6. ```getKeggPathIDs(keggOrthoID)``` gets the KEGG pathways ID associated with a KEGG ortholog.   
+## Overview
 
-7. look up the path description for any pathID we have.  
-8. print the output.  
-  
-  
-## Methods  
+This project aims to annotate species-specific UniProt IDs from BLAST results with species-independent KEGG Ortholog IDs using the KEGG API. By retrieving relevant pathway information from KEGG, we can link our predicted protein sequences to biologically meaningful pathways.
 
-```addKEGGPathways.py``` integrates the functions mentioned aboved and will do the following steps.
-- Filter to only BLAST output where evalue < 1e-50
-- Append the KEGG Ortholog ID, KEGG Pathway ID, and KEGG Pathway Description for each of the SwissProt (Uniprot) IDs
-- Skip PathIDs that start with 'path:map' but include a separate line for each 'path:ko' version (repeat the BLAST data on each line)
+## Methods
 
-Running the program:  
-```$python3 addKEGGPathways.py --i alignPredicted.txt -n 1e-50 -o keggPathway```
+### 1. Input Data
+- BLAST Results: The input file (alignPredicted.txt) contains the BLAST results of predicted proteins aligned to the SwissProt database.
+- KEGG API: The KEGG API is used to convert UniProt IDs to KEGG Ortholog IDs and retrieve associated KEGG pathway information.
+
+### 2. Tools Used
+BLAST: Previously used to align ORFs to SwissProt.
+KEGG API: Accessed via Python `requests` to retrieve KEGG Ortholog IDs and pathways.
+
+### 3. Script: `addKEGGPathways.py`
+The core of the project is the addKEGGPathways.py script, which automates the annotation process. Below are the required functionalities included in the script:
+
+- `get_args()`: Retrieves command-line arguments including input filename, e-value threshold, and output filename.
+- `getUniProtFromBlast(blast_line, threshold)`: Extracts UniProt IDs from BLAST results if the e-value is below the specified threshold.
+- `loadKeggPathways()`: Loads all KEGG pathways into a dictionary mapping Pathway IDs to descriptions.
+- `getKeggGenes(uniprotID)`: Retrieves KEGG genes for a given UniProt ID from the KEGG API.
+- `getKeggOrthology(keggGene)`: Retrieves KEGG Orthology IDs for a provided KEGG gene.
+- `getKeggPathIDs(keggOrthology)`: Retrieves KEGG Pathway IDs associated with a given KEGG Orthology ID.
+- `addKEGGPathways()`: Ties together the above functions to append KEGG Ortholog ID, KEGG Pathway ID, and description to each high-confidence BLAST result, skipping Path IDs that start with 'path
+' and including only 'path
+' versions.
+
 
 Expected output:
 ```
