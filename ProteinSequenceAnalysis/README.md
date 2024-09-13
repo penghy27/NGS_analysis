@@ -37,4 +37,14 @@ The entire pipeline is automated using shell scripts, making it adaptable for bi
 - `pfamScan_args.sh`:  Run hmmscan, a tool for searching protein sequences against a database of hidden Markov models (HMMs).
 - `predictProteins_args.sh`: Run TransDecoder.Predict, a tool for predicting protein-coding regions in transcripts.
 - `alignPredicted_args.sh`: Align the final predicted proteins to the SwissProt BLAST DB.
+- `sbatch_transdecoder.sh`: Test the pipeline above.
+
+## References
+Altschul, S. F., T. L. Madden, A. A. Schäffer, J. Zhang, Z. Zhang, W. Miller, and D. J. Lipman. 1997. "Gapped BLAST and PSI-BLAST: A New Generation of Protein Database Search Programs." Nucleic Acids Res 25 (17): 3389–3402.
+
+Finn, Robert D., Jody Clements, William Arndt, Benjamin L. Miller, Travis J. Wheeler, Fabian Schreiber, Alex Bateman, and Sean R. Eddy. 2015. "HMMER Web Server: 2015 Update." Nucleic Acids Res 43 (W1): W30–W38.
+
+Haas, Brian J., Alexie Papanicolaou, Moran Yassour, Manfred Grabherr, Philip D. Blood, Joshua Bowden, Matthew Brian Couger, et al. 2013. "De Novo Transcript Sequence Reconstruction from RNA-Seq Using the Trinity Platform for Reference Generation and Analysis." Nat Protoc 8 (8): 1494–1512.
+
+Pertsemlidis, A., and 3rd Fondon J. W. 2001. “Having a BLAST with Bioinformatics (and Avoiding BLASTphemy).” Genome Biol 2 (10): REVIEWS2002–REVIEWS2002.
 
