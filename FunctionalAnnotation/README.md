@@ -34,7 +34,8 @@ The core of the project is the `addKEGGPathways.py` script, which automates the 
 ' and including only 'path
 ' versions.
 
-#### 3-2. `test_addKEGGPathway.py`: Test `addKEGGPathways.py`
+#### 3-2. `test_addKEGGPathway.py`: 
+Test `addKEGGPathways.py`
 
 
 ### Expected output:
