@@ -9,9 +9,9 @@ Performed genome assembly and quality evaluation using Trimmomatic, Spades, and 
   
 ## RNA-seq Analysis
 
-Conducted RNA-seq read alignment (GSNAP) and de novo assembly (Trinity) for *Aiptasia pallida*.  
+Conducted RNA-seq read alignment (GMAP, GSNAP), reference-guided and de novo assembly (Trinity) for *Aiptasia pallida*.  
 [Short Read Alignment](https://github.com/penghy27/NU-NGS_analysis/tree/main/RNAseqAnalysis)  
-[Transcriptome Assembly](https://github.com/penghy27/NU-NGS_analysis/tree/main/RNAseqAnalysis)
+[Transcriptome Assembly](https://github.com/penghy27/NGS_analysis/tree/main/TranscriptomeAssembly)
 
 ## Protein Sequence Prediction and Annotation
 
