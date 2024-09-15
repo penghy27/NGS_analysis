@@ -5,10 +5,10 @@ This program takes an input align predicted file, threshold value, output name
 and then get an output with BLAST LINE, keggOrtho ID, keggPath ID, KEGG pathway description.
 """
 
+import re
 import argparse
 import requests
 import sys
-import re
 
 def get_args():
     """Return parsed command-line arguments."""
@@ -61,16 +61,16 @@ def get_filehandle(file=None, mode=None):
 
 def getUniProtFromBlast(blast_line, threshold):
     """
-    Returns UniProt ID from the BLAST line if the evalue is below the threshold
-    Returns False if evalue is above threshold
+    Returns UniProt ID from the BLAST line if the e-value is below the threshold.
+    Returns False if e-value is above threshold
     """
     cleaned_line = blast_line.strip()
     blast_fields = cleaned_line.split("\t")
     if float(blast_fields[7]) < float(threshold):
         uniprotID = blast_fields[1]
-        return(uniprotID)
+        return uniprotID
     else:
-        return(False)
+        return False
 
 
 def loadKeggPathways():
@@ -84,7 +84,7 @@ def loadKeggPathways():
         str_entry = entry.decode(result.encoding)  # convert from binary value to plain text
         fields = str_entry.split("\t")
         keggPathways[fields[0]] = fields[1]
-    return (keggPathways)
+    return keggPathways
 
 
 def getKeggGenes(uniprotID):
@@ -95,7 +95,7 @@ def getKeggGenes(uniprotID):
         str_entry = entry.decode(result.encoding)  # convert from binary value to plain text
         fields = str_entry.split("\t")
         keggGeneID.append(fields[1])  # second field is the keggGene ID
-    return(keggGeneID)
+    return keggGeneID
 
 
 def getKeggOrthology(keggGeneID):
@@ -105,45 +105,33 @@ def getKeggOrthology(keggGeneID):
     for entry in result.iter_lines():
         str_entry = entry.decode(result.encoding)  # convert from binary value to plain text
         fields = str_entry.split("\t")
-        keggOrthoID.append(fields[1])  # second field is the KEGG Orthology ID
-    return(keggOrthoID)
-
-
-def getKeggPathIDs(keggOrthoID):
-    """
-    Return a list of KEGG Path IDs from https://rest.kegg.jp/link/pathway/
-    """
-    keggPathID = []
-    result = requests.get(f'https://rest.kegg.jp/link/pathway/{keggOrthoID}')
-    for entry in result.iter_lines():
-        str_entry = entry.decode(result.encoding)  # convert from binary value to plain text
-        fields = str_entry.split("\t")
+        # new lines below
         if re.match('path:ko.*', fields[1]):
-            keggPathID.append(fields[1])
-    return(keggPathID)
+            keggOrthoID.append(fields[1])  # second field is the KEGG Orthology ID
+    return keggOrthoID
 
 
-def main():
-    args = get_args()
-    infile = args.infile
-    threshold = args.number
-    outfile = args.output
-    fh_in = get_filehandle(infile, 'r')
-    fh_out = get_filehandle(outfile, 'w')
+def addKEGGPathway(infile, threshold, outfile):
+    """
+    Read BLAST results, find KEGG Pathyway IDs, and write the output to a file
+    """
     keggPathways = loadKeggPathways()
 
-    for blast_line in fh_in:
-        uniprotID = getUniProtFromBlast(blast_line, threshold)
-        keggGeneID = getKeggGenes(uniprotID)
-        keggOrthoID = getKeggOrthology(keggGeneID)
-        keggPathID = getKeggPathIDs(keggOrthoID)
-        keggPathDesc = keggPathways[keggPathID]
-        fh_out.write(f"{blast_line}, {keggOrthoID}, {keggPathID}, {keggPathDesc}")
-    # just clean up
-    fh_in.close()
-    fh_out.close()
+    with get_filehandle(infile, "r") as in_fh, get_filehandle(outfile, "w") as out_fh:
+        for line in in_fh:
+            unitprotID = getUniProtFromBlast(line, threshold)
+            if unitprotID:
+                keggGenes = getKeggGenes(unitprotID)
+                for gene in keggGenes:
+                    keggOrthos = getKeggOrthology(gene)
+                    for ortho in keggOrthos:
+                        keggPaths = getKeggPathIDs(ortho)
+                        for path in keggPaths:
+                            pathway_description = keggPathways.get(path, "Unknown Pathway")
+                            out_fh.write(f"f{line.strip()}\t{ortho}\t{path}\t{pathway_description}\n")
 
 
 if __name__ == "__main__":
-    main()
+    args = get_args()
+    addKEGGPathway(args.infile, args.number, args.output)
 
