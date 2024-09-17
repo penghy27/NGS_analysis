@@ -1,7 +1,9 @@
 # Genome and Transcriptome Analysis
 
-This Northeastern academic project contains the code and documentation for a comprehensive genome and transcriptome analysis. Below are the key tasks and tools used in this analysis, along with links to the corresponding GitHub repositories for reference.
+This Northeastern academic project contains the code and documentation for a comprehensive genome and transcriptome analysis. Below are the key tasks and tools used in this analysis, along with links to the corresponding GitHub repositories.
   
+Skills:**Shell, Python, High-Performance Computing Platform**  
+
 ## Genome Assembly and Quality Evaluation
 
 Performed genome assembly and quality evaluation using Trimmomatic, Spades, and Quast.  
@@ -16,15 +18,15 @@ Conducted RNA-seq read alignment (GMAP, GSNAP), reference-guided and de novo ass
 ## Protein Sequence Prediction and Annotation
 
 Predicted protein sequences and candidate coding regions with BLAST and TransDecoder.
-Aligned protein sequences with SwissProt on Northeastern’s High-Performance Computing platform.  
+Aligned protein sequences with SwissPro.  
 [Protein Sequence Analysis](https://github.com/penghy27/NU-NGS_analysis/tree/main/ProteinSequenceAnalysis)
 
 ## Functional Annotation
 
-Utilized KEGG and GO databases for comprehensive annotation of protein sequences.  
+Utilized KEGG databases for comprehensive annotation of protein sequences.  
 [Functional Annotation](https://github.com/penghy27/NU-NGS_analysis/tree/main/FunctionalAnnotation)
 
   
 Please refer to the individual repositories linked above for detailed code, data, and documentation related to each specific analysis task.  
 
-Other academic projects can be found [here](https://github.com/penghy27/NU_academic_projects.git).
+Other bioinformatics projects can be found [here](https://github.com/penghy27/NU_academic_projects.git).
