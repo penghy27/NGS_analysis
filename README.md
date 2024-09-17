@@ -2,7 +2,7 @@
 
 This Northeastern academic project contains the code and documentation for a comprehensive genome and transcriptome analysis. Below are the key tasks and tools used in this analysis, along with links to the corresponding GitHub repositories.
   
-Skills:**Shell, Python, High-Performance Computing Platform**  
+Skills: **Shell, Python, High-Performance Computing Platform**  
 
 ## Genome Assembly and Quality Evaluation
 
