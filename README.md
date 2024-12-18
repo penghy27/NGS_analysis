@@ -15,11 +15,12 @@ Conducted RNA-seq read alignment (GMAP, GSNAP), reference-guided and de novo ass
 [Short Read Alignment](https://github.com/penghy27/NU-NGS_analysis/tree/main/RNAseqAnalysis)  
 [Transcriptome Assembly](https://github.com/penghy27/NGS_analysis/tree/main/TranscriptomeAssembly)
 
-## Protein Sequence Prediction and Annotation
+## Protein Sequence Prediction from Transcriptomes with BLAST and TransDecoder
 
 Predicted protein sequences and candidate coding regions with BLAST and TransDecoder.
 Aligned protein sequences with SwissPro.  
-[Protein Sequence Analysis](https://github.com/penghy27/NU-NGS_analysis/tree/main/ProteinSequenceAnalysis)
+
+[Protein Sequence Prediction](https://github.com/penghy27/NU-NGS_analysis/tree/main/ProteinSequenceAnalysis)
 
 ## Functional Annotation
 
