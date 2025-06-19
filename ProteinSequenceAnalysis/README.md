@@ -1,5 +1,5 @@
 # module-09-penghy27  
-Author: penghy27 (Hsiao-Yu Peng)  
+
 Date: November 30th, 2022  
 
 # Transcriptome Annotation Using BLAST and TransDecoder

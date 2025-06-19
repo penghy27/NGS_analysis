@@ -1,5 +1,5 @@
 # module-10-penghy27  
-Author: penghy27 (Hsiao-Yu Peng)  
+ 
 Date: December 7th, 2022  
 
 # Annotating SwissProt Hits with KEGG Ortholog IDs

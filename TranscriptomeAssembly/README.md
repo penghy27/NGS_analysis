@@ -1,5 +1,5 @@
 # module-08-penghy27  
-Author: penghy27 (Hsiao-Yu Peng)  
+  
 Date: November 20th, 2022  
 Purpose: Using Trinity for both reference-guided and de novo assemblies.
 

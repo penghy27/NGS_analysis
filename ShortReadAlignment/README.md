@@ -1,6 +1,5 @@
 # module-07-penghy27  
-Author: penghy27 (Hsiao-Yu Peng)  
-Date: November 14th, 2022  
+Date: November 14th, 2022      
 Purpose: Aligning RNA sequences reads of sea anemones (*Aiptasia pallida*).
 
 The following is working on Discovery. Running this alignment in /scratch/username/ with a computing node.
